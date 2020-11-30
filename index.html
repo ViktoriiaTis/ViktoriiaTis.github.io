@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="display.css" />
+  <link rel="stylesheet" type="text/css" media="(max-device-width:480px)" href="mobile.css" />
+  <link rel="stylesheet" href="../Practice_30.11/dist/css/bootstrap-grid.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbars/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+  <link href="../Practice_30.11/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="navbar.css" rel="stylesheet">
+  <title>Pizza</title>
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="img_fix"
+          src="data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTUgNDciIHdpZHRoPSIxMTUiIGhlaWdodD0iNDciPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiMwMDdBNTM7fQoJLnN0MXtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiNGRkZGRkY7fQoJLnN0MntmaWxsOiNEQTI5MUM7fQoJLnN0M3tmaWxsOiMwMDdBNTM7fQoJLnN0NHtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTA2LjM3LDIxLjM0Yy03LjQyLTQuMjgtMjQuNTUtOC42My0zMS43OS05LjIxbDAsMGwtNS40NS0wLjQ0bDAsMGMtNS44Mi0wLjQ3LTkuMDMtMC43My0xMS40OS0wLjczCgljLTIuNDYsMC0xNi45MywxLjE3LTE2LjkzLDEuMTdsMCwwYy03LjI1LDAuNTctMjQuMzcsNC45My0zMS43OSw5LjIxYy0zLjQ4LDIuMDEtMy44NiwzLjQyLTMuODYsOC4xNWwwLDB2MTIuMDVsMCwwCgljMCwwLjk4LDAuMTIsMi40MSwxLjE0LDMuNDljMS4xOCwxLjI1LDIuNywxLjI1LDQuNDcsMS4yNWwwLDBoMC4xM2g5My42OWgwLjEzbDAsMGMxLjc3LDAsMy4yOSwwLDQuNDctMS4yNQoJYzEuMDItMS4wOCwxLjE0LTIuNTEsMS4xNC0zLjQ5bDAsMFYyOS40OWwwLDBDMTEwLjIzLDI0Ljc2LDEwOS44NSwyMy4zNSwxMDYuMzcsMjEuMzRMMTA2LjM3LDIxLjM0TDEwNi4zNywyMS4zNEwxMDYuMzcsMjEuMzR6Ii8+CjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xMDkuMDcsNDEuNTRjMCwwLjc2LTAuMDgsMS44Ni0wLjgsMi42MmMtMC44NCwwLjg5LTIuMDIsMC44OS0zLjY1LDAuODlsMCwwaC0wLjEzSDEwLjhoLTAuMTNsMCwwCgljLTEuNjMsMC0yLjgxLDAtMy42NS0wLjg5Yy0wLjcyLTAuNzYtMC44LTEuODYtMC44LTIuNjJsMCwwVjI5LjQ5bDAsMGMwLTQuNTcsMC40LTUuNDMsMy4yNi03LjA4YzcuMy00LjIxLDI0LjE4LTguNDksMzEuMzMtOS4wNgoJbDAsMGw1LjQ1LTAuNDRsMCwwYzUuOC0wLjY2LDkuMDItMC44OCwxMS40My0wLjg4YzIuNDEsMCw2LjA2LDAuMTUsMTEuMzYsMC44OGwwLDBsNS40NSwwLjQ0bDAsMGM3LjE1LDAuNTcsMjQuMDMsNC44NSwzMS4zMyw5LjA2CgljMi44NiwxLjY1LDMuMjYsMi41MSwzLjI2LDcuMDhsMCwwVjQxLjU0TDEwOS4wNyw0MS41NEwxMDkuMDcsNDEuNTR6Ii8+CjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik04MC40MSw3Ljk4bC0wLjY4LTAuMjFjLTAuMTktMC4wNS00LjU3LTEuMjQtNi4wMi0xLjI4bDAuMzItMS43NUM3NC4wNSw0LjYxLDc0LDQuNDgsNzMuOSw0LjM0CgljLTAuNjItMC44NC03LjA3LTIuNy0xNi4zNC0yLjdjLTkuMTQsMC0xNS44NCwxLjcyLTE2LjQ3LDIuNDhjLTAuMSwwLjEyLTAuMTQsMC4yNC0wLjExLDAuMzdsMC40NCwxLjk5CgljLTEuNDYsMC4wNC01LjgzLDEuMjMtNi4wMiwxLjI4bC0wLjY4LDAuMjFsMC40MSwwLjQ3bDIuNTksMi43NWwtMC41Niw0LjY2TDM3LjEsMTYuNWwwLjU5LTAuMTVjMC41NC0wLjEzLDEuMTUtMC4zMSwxLjc5LTAuNQoJYzEuNDgtMC40NCwzLjE2LTAuOTQsNC4zNC0wLjk0YzAuMDEsMCwwLjg4LTAuMDIsMS43NC0wLjA5YzAuMy0wLjAzLDAuNDctMC4xMSwwLjUtMC4yN2MwLjEtMC40LTAuOTEtMS4wOC0xLjE3LTEuMjUKCWMwLjQ1LTAuNCw3LjQ0LTEuMTYsMTIuNjctMS4xM2gwYzAuMDgsMCwwLjE1LDAsMC4yMywwYzUuMjIsMCwxMi4wNSwwLjc1LDEyLjQ1LDEuMTNjLTAuMjYsMC4xNy0xLjI3LDAuODUtMS4xOCwxLjI2CgljMC4wNCwwLjE1LDAuMiwwLjI0LDAuNSwwLjI3YzAuODYsMC4wOCwxLjczLDAuMDksMS43NCwwLjA5YzEuMTgsMCwyLjg1LDAuNSw0LjM0LDAuOTRjMC42NCwwLjE5LDEuMjUsMC4zNywxLjc5LDAuNWwwLjU5LDAuMTUKCWwtMC42My01LjNMODAsOC40NUw4MC40MSw3Ljk4eiIvPgo8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNzEuMjcsMTIuODVsLTAuMTQtMC4xMWMtMC41NS0wLjUzLTcuNTEtMS4zNy0xMy40My0xLjI5aDBjLTUuOTMtMC4wOC0xMy4zMiwwLjg5LTEzLjcyLDEuNDZsLTAuMDYsMC4wNwoJbC0wLjA1LTAuMTljLTAuMDItMC4wOC0xLjYyLTcuNTMtMS43Mi03LjkyYy0wLjAxLTAuMDQsMC4wMy0wLjEyLDAuMDktMC4xOWMwLjU4LTAuNzQsNy4zNC0yLjIsMTUuNDYtMi4yCgljMy41OSwwLDcuMzMsMC40LDEwLjUzLDAuOThjMi41NiwwLjQ2LDQuMzksMC45Niw0LjcsMS4zNmMwLjA0LDAuMDYsMC4wMywwLjE3LDAuMDIsMC4yM2MtMC4wOSwwLjM5LTEuNTEsNi45OS0xLjUzLDcuMDYKCUw3MS4yNywxMi44NXoiLz4KPHBhdGggY2xhc3M9InN0MyIgZD0iTTQzLjEsMTMuNzRsLTEuNS02LjVjMCwwLTAuMDIsMC0wLjAzLDBjLTEuMTUsMC01LjM5LDEuMTQtNS4zOSwxLjE0bDIuNDEsMi41NGwtMC41Miw0LjQ5CgljMCwwLDEuNDYtMC4zOCwyLjEyLTAuNTZjMC43Ni0wLjIxLDEuNDgtMC40MSwyLjEtMC41NWMwLjQ3LTAuMSwwLjg0LTAuMTMsMS4xNy0wLjE1YzAuMDctMC4wMSwwLjI0LTAuMDIsMC4zMS0wLjAybC0wLjE0LTAuMDgKCUw0My4xLDEzLjc0eiIvPgo8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNzIuMDEsMTMuODZsMS41LTYuNWMwLDAsMC4wMiwwLDAuMDMsMGMxLjE1LDAsNS4zOSwxLjE0LDUuMzksMS4xNGwtMi40MSwyLjU0bDAuNTIsNC40OQoJYzAsMC0xLjQ2LTAuMzgtMi4xMi0wLjU2Yy0wLjc2LTAuMjEtMS40OC0wLjQxLTIuMS0wLjU1Yy0wLjQ3LTAuMS0wLjg0LTAuMTMtMS4xNy0wLjE1Yy0wLjA3LTAuMDEtMC4yNC0wLjAyLTAuMzEtMC4wMmwwLjE0LTAuMDgKCUw3Mi4wMSwxMy44NnoiLz4KPHBhdGggY2xhc3M9InN0MiIgZD0iTTk4LjE1LDI2LjI2Yy0wLjMyLTAuMDYtMC42NC0wLjEyLTAuOTYtMC4xOGMwLjA4LTAuODIsMC4xOC0xLjY2LDAuMjYtMi40N2MwLjQyLDAuMTIsMC44NCwwLjI3LDEuMjYsMC40CglDOTguNTQsMjQuNzQsOTguMzMsMjUuNSw5OC4xNSwyNi4yNnoiLz4KPHBhdGggY2xhc3M9InN0MiIgZD0iTTkuNiwyNy42N2MzLjktMi45Miw4LjI5LTMuOTUsOC4yOS0zLjk1bC0wLjAzLDQuMjRsMC4wNywxMy42MWgtMy4zOGwtMC4wMi0xMy4zMmwtMS43OSwwLjcybDAuMDMsMTIuNTgKCUw5LjYsNDEuNTdWMjcuNjd6Ii8+CjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zNC45MSw0MS41N2wwLTE4Ljg0TDMzLDIzLjAzbDAuMDQsMTguNTRoLTMuNDVsMC4wMi0xNi41OWMwLTAuNDItMC4wMi00LjE3LTAuMDItNC4xNwoJYzIuODgtMC43NCw4Ljg0LTEuNTEsOC44NC0xLjUxbDAuMDIsMjIuMjdIMzQuOTF6Ii8+CjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOS4wMiw0MS41N2wwLjM5LTIuNzVjMCwwLDAuMjUtMi4zMSwwLjM2LTIuNzVsMS41OS0xMy40MWMyLjYyLTAuODMsNC42LTEuMDQsNC42LTEuMDRsMS40MiwxNC42MWwwLjY2LDUuMzQKCWgtMy4wM2wtMC42My02LjA3aC0xLjc2bC0wLjU2LDYuMDdIMTkuMDIgTTIzLjQ1LDI2LjM1aC0wLjAzbC0wLjU3LDYuNTRoMS4yTDIzLjQ1LDI2LjM1eiIvPgo8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMzkuNzQsNDEuNTdjMCwwLDAuNDQtNS4wNiwwLjU1LTUuNWwxLjQ3LTE3LjE5YzEuNzgtMC4yMSw0LjYyLTAuNDgsNC42Mi0wLjQ4bDIuMTQsMTcuODQKCWMwLjA3LDAuMzUsMC42Niw1LjMzLDAuNjYsNS4zM2gtMy4zM2wtMC40OC02Ljk2aC0yLjIzbC0wLjM4LDYuOTZoLTMuMjIgTTQ0LjIsMjMuNzVoLTAuMDNsLTAuOCw3Ljc4aDEuNjdMNDQuMiwyMy43NXoiLz4KPHBhdGggY2xhc3M9InN0MiIgZD0iTTUzLjQ0LDM1Ljc4VjIxLjkyYzAtMC40MSwwLjA1LTMuODcsMC4wNS0zLjg3YzQuMzUtMC4yMyw4LjQ5LDAsOC40OSwwcy0wLjAzLDMuNDUtMC4wMywzLjg3djE1Ljc1aDEuMjJ2My44OAoJSDU5LjlWNDAuM2gtNC4yM3YxLjI1aC0zLjUyVjM3LjdsMC40Ny0wLjAxYzAsMCwwLjgyLTAuNTEsMC44Mi0xLjMxVjM1Ljc4eiBNNTguNywyMC43OGgtMS43OXYxNC45NGMwLDEtMC4xLDEuMzMtMC4zLDEuOTFoMi4wOQoJVjIwLjc4eiIvPgo8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNzEuOTUsMjcuOTlsMi4xNC05LjFjMS4xNywwLjEsMy4zNywwLjQ2LDMuMzcsMC40NmwtMi45MSwxMC43NWwyLjU5LDExLjQ4aC0zLjE4bC0xLjY2LTkuNTZoLTAuMDNsMC4xMyw5LjU2CgloLTMuNjdsMC4wMy04LjcxbC0wLjAzLTAuODVsLTEuMzksOS41NmgtMy4yM2wyLjI1LTExLjM5bC0yLjA5LTcuMDhjLTAuNTMtMi4wNy0xLjE4LTUuMDEtMS4xOC01LjAxYzAuOC0wLjAxLDMuMTksMC4yMSwzLjE5LDAuMjEKCUw2OC43NiwyOGwtMC4wMy05LjYyYzAuNjQsMC4wMSwzLjQ3LDAuMzQsMy40NywwLjM0TDcxLjk1LDI3Ljk5eiIvPgo8cGF0aCBjbGFzcz0ic3QyIiBkPSJNODEuNzMsNDEuNjVjLTIuNDIsMC00LjA5LTEuNS00LjA5LTQuMTJWMjMuNTRjMC0yLjYzLDEuNjctMy45Myw0LjA5LTMuNzljMy4yNiwwLjE4LDQuMDgsMS42Myw0LjA4LDQuMjYKCXYxMy41MkM4NS44MSw0MC4xNiw4NC4xNCw0MS42NSw4MS43Myw0MS42NSBNODEuNzMsMzguNTJjMC43LDAsMC42Ni0wLjc1LDAuNjYtMC44M1YyMy44MmMwLTAuMDcsMC4wNC0wLjgyLTAuNjYtMC44MgoJYy0wLjcxLDAtMC42NywwLjc0LTAuNjcsMC44MnYxMy44N0M4MS4wNiwzNy43Niw4MS4wMiwzOC41Miw4MS43MywzOC41MnoiLz4KPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSI5Mi44MSw0MS41NyA5Mi43OSwzNC41IDkwLjg3LDM0LjUgOTAuODgsNDEuNTcgODcuMjcsNDEuNTcgODcuMjcsMjEuMSA5MC44NiwyMi4wNyA5MC44NywzMC44MSAKCTkyLjc5LDMwLjgxIDkyLjc5LDIyLjQxIDk2LjM4LDIzLjQ1IDk2LjM4LDQxLjU3ICIvPgo8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTAxLjkyLDI4Ljg2Yy0wLjczLDAtMC42NCwwLjc4LTAuNjQsMS4yNHY4LjA0YzAsMC40Ni0wLjA5LDEuMjQsMC42NCwxLjI0YzAuNzMsMCwwLjg5LTAuNzksMC44OS0xLjI0di0xLjI3CgloMi42OWMwLDAsMC4xLDIuNTYtMC42MywzLjU0Yy0wLjczLDAuOTktMS4yOCwxLjM1LTIuNywxLjM5Yy0xLjQxLDAuMDQtMi43Ni0wLjI3LTMuNDYtMC45M2MtMC45Ny0wLjktMC45My0yLjA4LTAuOTMtMy4zMXYtOC4wNgoJYzAtMSwwLjEzLTIuMjcsMC45NS0yLjk1YzAuNzYtMC42MywyLjAxLTAuNiwzLjM0LTAuNTVjMS4zNCwwLjA1LDMuMDMsMC43MSwzLjI1LDEuODljMC4yMiwxLjE4LDAuMTgsMy4zNCwwLjE4LDMuMzRoLTIuNjlWMzAuMQoJQzEwMi44MSwyOS42NCwxMDIuNjUsMjguODYsMTAxLjkyLDI4Ljg2Ii8+CjxnPgoJPHBhdGggY2xhc3M9InN0NCIgZD0iTTQ1LjUzLDUuNDdsMy43OC0wLjU5bDAuNzQsNC43NmwtMC45NiwwLjE1bC0wLjYyLTMuOTZsLTEuODYsMC4yOWwwLjYyLDMuOTZsLTAuOTYsMC4xNUw0NS41Myw1LjQ3eiIvPgoJPHBhdGggY2xhc3M9InN0NCIgZD0iTTUwLjU5LDQuNzNsMC45MS0wLjA3bDAuMjYsMy4ybDEuNjktMy4zNWwwLjk3LTAuMDhsMC4zOCw0LjhMNTMuODgsOS4zbC0wLjI1LTMuMTNsLTEuNjksMy4yOWwtMC45NywwLjA4CgkJTDUwLjU5LDQuNzN6Ii8+Cgk8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNNTUuNjksNC4zN2wwLjk3LDBsMC4wMiw0LjAxbDEuODktMC4wMWwtMC4wMi00LjAxbDAuOTcsMGwwLjAyLDQuMDFsMC40LDBsMC4wMSwxLjg2bC0wLjgxLDBsMC0xLjA1CgkJbC0zLjQyLDAuMDJMNTUuNjksNC4zN3oiLz4KCTxwYXRoIGNsYXNzPSJzdDQiIGQ9Ik02MC45MSw0LjRsMC45NywwLjA4bC0wLjMyLDMuOTlsMS44OCwwLjE1bDAuMzItMy45OWwwLjk3LDAuMDhMNjQuNDEsOC43bDAuNCwwLjAzbC0wLjE1LDEuODVsLTAuODEtMC4wNgoJCWwwLjA4LTEuMDVMNjAuNTMsOS4yTDYwLjkxLDQuNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDQiIGQ9Ik02OS41NywxMC4zN2wtMS4wNC0wLjE4bC0wLjIyLTEuMTVsLTEuOS0wLjMzbC0wLjU4LDEuMDFsLTEuMDItMC4xOGwyLjY4LTQuNDJsMS4wMSwwLjE4TDY5LjU3LDEwLjM3egoJCSBNNjguMTQsOC4xOEw2Ny44LDYuMzFsLTAuOTUsMS42NUw2OC4xNCw4LjE4eiIvPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggY2xhc3M9InN0MyIgZD0iTTEwOC44MywyMS4xNWMtMC45NiwwLTEuNjctMC43NS0xLjY3LTEuNjhjMC0wLjkzLDAuNzEtMS42OSwxLjY3LTEuNjljMC45NiwwLDEuNjcsMC43NiwxLjY3LDEuNjkKCQkJQzExMC41LDIwLjQsMTA5Ljc4LDIxLjE1LDEwOC44MywyMS4xNXogTTEwOC44MywxOC4wM2MtMC44MywwLTEuNDEsMC42NC0xLjQxLDEuNDRjMCwwLjc5LDAuNTgsMS40NCwxLjQxLDEuNDQKCQkJYzAuODMsMCwxLjQxLTAuNjUsMS40MS0xLjQ0QzExMC4yNCwxOC42NywxMDkuNjYsMTguMDMsMTA4LjgzLDE4LjAzeiBNMTA5LjQsMjAuMjRjLTAuMjIsMC0wLjMtMC4wNi0wLjMtMC4yNFYxOS44CgkJCWMwLTAuMTMtMC4wNi0wLjIyLTAuMi0wLjIyaC0wLjI5djAuNjRoLTAuMjlWMTguN2gwLjYxYzAuMzMsMCwwLjQ1LDAuMTYsMC40NSwwLjQxdjAuMDVjMCwwLjE5LTAuMDYsMC4yOS0wLjI1LDAuMzMKCQkJYzAuMTgsMC4wMiwwLjI2LDAuMTcsMC4yNiwwLjMydjAuMTdjMCwwLjA1LDAuMDIsMC4wNiwwLjA4LDAuMDZ2MC4ySDEwOS40eiBNMTA5LjA5LDE5LjExYzAtMC4xLTAuMDQtMC4xOC0wLjE4LTAuMThoLTAuMjl2MC40NgoJCQloMC4yN2MwLjEzLDAsMC4yLTAuMDcsMC4yLTAuMjFWMTkuMTF6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+        aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#pizza" tabindex="-1" aria-disabled="true">Пицца</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Напитки</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Десерты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map" tabindex="-1" aria-disabled="true">Где мы?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Акции</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Бонусы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Контакты:<a class="nav-link" href="#">
+                +38 093 434 33 43
+              </a></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <!-- Bootstrap 4 -->
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Индикаторы -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid"
+                  src="https://cdn.papajohns.ru//images/banners/c7086f5267d90fa5cbeba2383c5ff23f.webp" alt="Error! 1">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid"
+                  src="https://cdn.papajohns.ru//images/banners/ca4ed8810b972dc97a699b062d4b0635.webp" alt="Error! 2">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid"
+                  src="https://cdn.papajohns.ru//images/banners/521e93296f39d69b25548bccbd5bf98f.webp" alt="Error! 3">
+              </div>
+            </div>
+            <!-- Элементы управления -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Следующий</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: center;">
+          <br>
+          <h2>Пицца</h2>
+          <br>
+        </div>
+      </div>
+      <a name="pizza"></a>
+      <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+
+              <img class="img_fix"
+                src="https://media.dominos.ua/__sized__/menu/product_osg_image_mobile/2018/02/28/%D0%9F%D0%B5%D0%BF%D0%BF%D0%B5%D1%80%D0%BE%D0%BD%D0%B8_%D0%B8_%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D1%8B_300dpi-thumbnail-960x960-70.jpg">
+
+              <ul class="list-unstyled mt-2 mb-3">
+                <li><strong> Пепперони с томатами</strong></li>
+                <li><i>30 см</i></li>
+                <li>Соус барбекю, Пепперони, Помидоры, Моцарелла</li>
+              </ul>
+
+              <div class="row">
+
+                <h3 class="col-lg-5 card-title pricing-card-title ">186 <small class="text-muted">грн</small></h3>
+                <button type="button" style="width:50%;"
+                  class="col-lg-5 btn btn-lg btn-block btn-outline-primary">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <img class="img_fix"
+                src="https://media.dominos.ua/__sized__/menu/product_osg_image_mobile/2018/02/28/%D0%93%D0%B0%D0%B2%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D0%B0_300dpi-thumbnail-960x960-70.jpg">
+
+              <ul class="list-unstyled mt-2 mb-3">
+                <li><strong> Гавайская</strong></li>
+                <li><i>30 см</i></li>
+                <li>Курица, Cоус Domino's, Ананас, Моцарелла</li>
+              </ul>
+              <div class="row">
+
+                <h3 class="col-lg-5 card-title pricing-card-title price">198 <small class="text-muted">грн</small></h3>
+                <button type="button" style="width:50%;"
+                  class="col-lg-5 btn btn-lg btn-block btn-outline-primary">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <img class="img_fix"
+                src="https://media.dominos.ua/__sized__/menu/product_osg_image_mobile/2018/02/28/%D0%A2%D0%B5%D1%85%D0%B0%D1%81_300dpi-thumbnail-960x960-70.jpg">
+
+              <ul class="list-unstyled mt-2 mb-3">
+                <li><strong> Техас</strong></li>
+                <li><i>30 см</i></li>
+                <li>Колбаски баварские, Соус барбекю, Кукуруза, Грибы, Лук, Моцарелла</li>
+              </ul>
+              <div class="row">
+
+                <h3 class="col-lg-5 card-title pricing-card-title">210 <small class="text-muted">грн</small></h3>
+                <button type="button" style="width:50%;"
+                  class="col-lg-5 btn btn-lg btn-block btn-outline-primary">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col" style="text-align: center;">
+          <br>
+          <h2>Мы здесь!</h2>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.5092937284658!2d30.733962276391786!3d46.478226959980226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6317e8e841e1f%3A0xcce3b48fc6871bfc!2z0KHRltC70YzQv9C-!5e0!3m2!1sru!2sua!4v1606720751563!5m2!1sru!2sua"
+          width="100%" height="500px" style="border:5px double rgb(59, 103, 170);" allowfullscreen=""
+          aria-hidden="false" tabindex="0"></iframe> <a name="map"></a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Our social networks:</p>
+          <a class="a" href="#" id="menu"></a>
+          <a class="a" href="#" id="menu1"></a>
+          <a class="a" href="#" id="menu2"></a>
+        </div>
+        <div class="col">
+          <p>Our contacts:</p>
+          <a href="#">
+            <h5>Tel.: +38 093 434 33 43 </h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script>window.jQuery || document.write('<script src="../Practice_30.11/dist/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../Practice_30.11/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.a{display: inline-block; width: 35px; height: 35px; background: url(../assets/icons/SocialNet.jpg) no-repeat;}
+#menu{background-position: -25px -10px}
+#menu:hover{background-position: -222px -10px}
+
+#menu1{background-position: -57px -10px}
+#menu1:hover{background-position: -255px -10px}
+
+#menu2{background-position: -89px -10px}
+#menu2:hover{background-position: -285px -10px}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Features{
+  text-align: center;
+  align-items: center;
+}
+body {
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+}
+.border_for{
+  border: 1ex solid blue;
+}
+span {
+  color: #0474bc;
+}
+
+i{
+  text-align: justify;
+}
+article {
+  padding: 3em;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.border_rb{
+  border-right: 2px solid rgb(179, 179, 179);
+}
+.border_top{
+  border-top: 2px solid rgb(179, 179, 179);
+}
+
+.img_fix{
+width: 100%; /* Ширина изображений */
+height: 100%; /* Высота изображении */
+object-fit: cover; /* Вписываем фотографию в область */
+}
+
+footer{
+  text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
